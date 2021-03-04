@@ -1,6 +1,6 @@
 .idea/
 .git/
-
+out/
 # Compiled class file
 *.class
 

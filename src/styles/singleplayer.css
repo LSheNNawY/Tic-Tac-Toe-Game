@@ -1,0 +1,22 @@
+.root {
+    -fx-background-image: url("../images/playback.jpeg");
+}
+
+.secondPlayer {
+    -fx-border-radius: 50%;
+    -fx-border-style: solid;
+    -fx-border-color: white;
+    -fx-border-width: 10px;
+}
+
+.playName {
+    -fx-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-family: Dialog;
+}
+
+.score {
+    -fx-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: Dialog;
+}
