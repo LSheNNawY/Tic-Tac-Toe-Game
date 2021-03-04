@@ -32,38 +32,51 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="757.0" maxWidth="756.0" minHeight="451.0" minWidth="750.0" prefHeight="451.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<AnchorPane maxHeight="757.0" maxWidth="1031.0" minHeight="451.0" minWidth="750.0" prefHeight="565.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
-      <ImageView fitHeight="529.0" fitWidth="931.0" layoutX="-24.0" layoutY="-77.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="947.0" fitWidth="566.0" layoutX="191.0" layoutY="-191.0" opacity="0.75" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="@../images/bg2.jpg" />
+            <Image url="@../images/bg.jpg" />
          </image>
       </ImageView>
-      <Button graphicTextGap="5.0" layoutX="553.0" layoutY="134.0" mnemonicParsing="false" onAction="#multiAction" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #2c3e50;" text="Multi-Player" textFill="WHITE">
+      <Button graphicTextGap="5.0" layoutX="643.0" layoutY="180.0" mnemonicParsing="false" onAction="#multiAction" prefHeight="59.0" prefWidth="233.0" style="-fx-background-color: #2c3e50;" text="Multi Players" textFill="WHITE">
          <font>
             <Font name="Microsoft JhengHei Light" size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button graphicTextGap="5.0" layoutX="553.0" layoutY="287.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #2c3e50;" text="Exit" textFill="WHITE">
+      <Button graphicTextGap="5.0" layoutX="643.0" layoutY="388.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="59.0" prefWidth="233.0" style="-fx-background-color: #2c3e50;" text="Exit" textFill="WHITE">
          <font>
             <Font name="Microsoft JhengHei Light" size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button graphicTextGap="5.0" layoutX="553.0" layoutY="59.0" mnemonicParsing="false" onAction="#singleAction" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #2c3e50;" text="Single-Player" textFill="WHITE">
+      <Button graphicTextGap="5.0" layoutX="643.0" layoutY="78.0" mnemonicParsing="false" onAction="#singleAction" prefHeight="59.0" prefWidth="233.0" style="-fx-background-color: #2c3e50;" text="Single Player" textFill="WHITE">
          <font>
             <Font name="Microsoft JhengHei Light" size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button graphicTextGap="5.0" layoutX="553.0" layoutY="209.0" mnemonicParsing="false" onAction="#optionAction" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #2c3e50;" text="OPtion" textFill="WHITE" textOverrun="CLIP">
+      <Button graphicTextGap="5.0" layoutX="643.0" layoutY="284.0" mnemonicParsing="false" onAction="#optionAction" prefHeight="59.0" prefWidth="233.0" style="-fx-background-color: #2c3e50;" text="Option" textFill="WHITE" textOverrun="CLIP">
          <font>
             <Font name="Microsoft JhengHei Light" size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
    </children>
 </AnchorPane>

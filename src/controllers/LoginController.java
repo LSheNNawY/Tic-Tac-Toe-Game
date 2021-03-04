@@ -35,7 +35,7 @@ public class LoginController {
             errorField.setText("Wrong credentials.");
         else {
             Main.setRoot("main");
-            Main.setSceneSize(757, 452);
+            Main.setSceneSize(945, 565);
         }
     }
 

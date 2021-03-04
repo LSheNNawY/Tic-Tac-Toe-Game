@@ -32,7 +32,7 @@ public class SinglePlayerController {
 
     public void backAction(ActionEvent event) throws IOException {
         Main.setRoot("main");
-        Main.setSceneSize(760, 451);
+        Main.setSceneSize(945, 565);
 
     }
 }

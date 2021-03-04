@@ -16,7 +16,7 @@
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="42.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="25.0">
          <image>
-            <Image url="@../images/ninja-avatar.png" />
+            <Image url="@../images/avatar.png" />
          </image>
       </ImageView>
       <Text layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
@@ -75,7 +75,7 @@
             <Image url="@../images/x-png-18.png" />
          </image>
       </ImageView>
-      <Button graphicTextGap="0.0" fx:id="backBtn" onAction="#backAction" layoutX="22.0" layoutY="645.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="98.0" style="-fx-background-color: transparent;" text="  ">
+      <Button fx:id="backBtn" graphicTextGap="0.0" layoutX="22.0" layoutY="645.0" mnemonicParsing="false" onAction="#backAction" prefHeight="75.0" prefWidth="98.0" style="-fx-background-color: transparent;" text="  ">
          <graphic>
             <ImageView fitHeight="92.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
                <image>
