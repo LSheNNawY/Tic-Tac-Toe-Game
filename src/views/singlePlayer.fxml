@@ -75,7 +75,7 @@
             <Image url="@../images/x-png-18.png" />
          </image>
       </ImageView>
-      <Button graphicTextGap="0.0" layoutX="22.0" layoutY="645.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="98.0" style="-fx-background-color: transparent;" text="  ">
+      <Button graphicTextGap="0.0" fx:id="backBtn" onAction="#backAction" layoutX="22.0" layoutY="645.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="98.0" style="-fx-background-color: transparent;" text="  ">
          <graphic>
             <ImageView fitHeight="92.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
                <image>
