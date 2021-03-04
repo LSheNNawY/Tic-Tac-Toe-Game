@@ -7,6 +7,8 @@ out/
 # Log file
 *.log
 
+tic-tac-toe.iml
+
 # BlueJ files
 *.ctxt
 
