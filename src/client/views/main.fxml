@@ -39,7 +39,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="757.0" maxWidth="1031.0" minHeight="451.0" minWidth="750.0" prefHeight="565.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<AnchorPane maxHeight="757.0" maxWidth="1031.0" minHeight="451.0" minWidth="750.0" prefHeight="565.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.MainController">
    <children>
       <ImageView fitHeight="947.0" fitWidth="566.0" layoutX="191.0" layoutY="-191.0" opacity="0.75" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>

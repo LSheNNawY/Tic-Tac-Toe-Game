@@ -1,4 +1,4 @@
-package controllers;
+package client.controllers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
-        scene = new Scene(loadFXML("login"), 800, 534);
+        scene = new Scene(loadFXML("singlePlayer"), 800, 534);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -32,7 +32,7 @@ public class Main extends Application {
 
     private static Parent loadFXML(String fxml) throws IOException {
         String separator = File.separator;
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(".." + separator + "views"+ separator + fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(".." + separator + "views" + separator + fxml + ".fxml"));
         return fxmlLoader.load();
     }
 

@@ -1,4 +1,4 @@
-package controllers;
+package client.controllers;
 
 import java.io.IOException;
 import java.net.URL;

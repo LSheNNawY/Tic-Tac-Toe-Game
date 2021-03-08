@@ -1,4 +1,4 @@
-package controllers;
+package client.controllers;
 
 import java.io.File;
 import java.net.URL;
@@ -21,7 +21,7 @@ public class WinnerController implements Initializable {
     @FXML
     private MediaView mediaView;
 
-    private final String path = new File("src/videos/winner.mp4").toURI().toString();
+    private final String path = new File("src/client.videos/winner.mp4").toURI().toString();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -29,10 +29,6 @@ public class WinnerController implements Initializable {
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
         mediaPlayer.setAutoPlay(true);
-//        DoubleProperty width = mediaView.fitWidthProperty();
-//        DoubleProperty height = mediaView.fitHeightProperty();
-//        width.bind(Bindings.selectDouble(mediaView.sceneProperty(), "width"));
-//        height.bind(Bindings.selectDouble(mediaView.sceneProperty(), "height"));
     }
 }
 
