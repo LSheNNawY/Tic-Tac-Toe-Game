@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
-        scene = new Scene(loadFXML("singlePlayer"), 800, 534);
+        scene = new Scene(loadFXML("login"), 800, 534);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

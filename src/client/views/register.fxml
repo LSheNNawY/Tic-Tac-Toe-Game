@@ -16,17 +16,17 @@
             <Image url="@../images/loginback2.jpeg" />
          </image>
       </ImageView>
-      <JFXTextField fx:id="username" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="121.0" prefHeight="39.0" prefWidth="400.0" promptText="Username" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
+      <JFXTextField fx:id="username" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="121.0" onAction="#registerAction" prefHeight="39.0" prefWidth="400.0" promptText="Username" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
          <font>
             <Font name="Monospaced Regular" size="16.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="email" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="213.0" prefHeight="39.0" prefWidth="400.0" promptText="Email" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
+      <JFXTextField fx:id="email" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="213.0" onAction="#registerAction" prefHeight="39.0" prefWidth="400.0" promptText="Email" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
          <font>
             <Font name="Monospaced Regular" size="16.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField fx:id="password" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="305.0" prefHeight="39.0" prefWidth="400.0" promptText="Password" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
+      <JFXPasswordField fx:id="password" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="305.0" onAction="#registerAction" prefHeight="39.0" prefWidth="400.0" promptText="Password" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
          <font>
             <Font name="Monospaced Regular" size="16.0" />
          </font>

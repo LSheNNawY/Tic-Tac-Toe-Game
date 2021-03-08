@@ -1,5 +1,6 @@
 package client.controllers;
 
+import models.Authentication;
 import models.DatabaseManager;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
@@ -51,8 +52,8 @@ public class RegisterController implements Initializable {
         if (usernameF.isEmpty()||emailF.isEmpty()||passwordF.isEmpty()){
             errorField.setText("All fields required.");
         } else {
-            DatabaseManager databaseManager = DatabaseManager.getInstance();
-            int result = databaseManager.register(usernameF, emailF, passwordF);
+            Authentication authentication = new Authentication();
+            int result = authentication.register(usernameF, emailF, passwordF);
             if (result == 1) {
                 Main.setRoot("login");
             } else {

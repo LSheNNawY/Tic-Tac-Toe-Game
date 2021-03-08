@@ -2,7 +2,7 @@ package models;
 
 import java.sql.*;
 
-public final class DatabaseManager {
+public class DatabaseManager {
     private static DatabaseManager databaseManager = null;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/tic_tac_toe?serverTimezone=UTC";
     private static final String DB_USERNAME = "root";
@@ -25,6 +25,10 @@ public final class DatabaseManager {
         return databaseManager;
     }
 
+    /**
+     * Create connection method
+     * @return void
+     */
     void createConnection() {
         try {
             DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
@@ -35,47 +39,19 @@ public final class DatabaseManager {
     }
 
     /**
-     * Login method
-     * @param username login username
-     * @param password login password
-     * @return array of [username, email]
+     * return connection
+     * @return Connection
      */
-    public String[] login(String username, String password) {
-        String[] credentials = {null, null};
-        try {
-            String query = "SELECT * FROM `players` WHERE `username` = \"" + username + "\" AND `password` = \"" + password + "\" LIMIT 1";
-
-            statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
-
-            while (resultSet.next()) {
-                credentials[0] = resultSet.getString(2);
-                credentials[1] = resultSet.getString(3);
-            }
-
-        } catch (SQLException throwable) {
-            throwable.printStackTrace();
-        }
-        return credentials;
+    public Connection getConnection() {
+        return connection;
     }
 
     /**
-     * Register method
-     * @param username player username
-     * @param email player email
-     * @param password player password
-     * @return int 1 if done or 0 if there is error
+     * return statement method
+     * @return Statement
      */
-    public int register(String username, String email, String password) {
-        int result = 0;
-        try {
-            String query = "INSERT INTO `players` (`username`, `email`, `password`) VALUES (\"" + username + "\", \"" + email + "\", \"" + password + "\")";
-            statement = connection.createStatement();
-            result = statement.executeUpdate(query);
-        } catch (SQLException throwable) {
-            throwable.printStackTrace();
-        }
-        return result;
+    public Statement getStatement() {
+        return statement;
     }
 }
 

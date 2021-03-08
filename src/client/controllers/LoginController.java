@@ -1,5 +1,6 @@
 package client.controllers;
 
+import models.Authentication;
 import models.DatabaseManager;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
@@ -28,8 +29,8 @@ public class LoginController {
 
     @FXML
     void loginFunction(ActionEvent event) throws IOException {
-        DatabaseManager manager = DatabaseManager.getInstance();
-        credentials = manager.login(usernameField.getText(), passwordField.getText());
+        Authentication authentication = new Authentication();
+        credentials = authentication.login(usernameField.getText(), passwordField.getText());
 
         if (credentials[0] == null)
             errorField.setText("Wrong credentials.");
