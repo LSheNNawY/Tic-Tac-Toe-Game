@@ -39,7 +39,6 @@ public class SinglePlayerController {
     }
 
     public void mouseClicked(MouseEvent mouseEvent) {
-
         Object node = mouseEvent.getSource();
         Button button = (Button) node;
         String id = button.getId();

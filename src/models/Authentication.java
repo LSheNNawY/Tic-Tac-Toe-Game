@@ -1,5 +1,7 @@
 package models;
 
+import cutomCollections.PlayerDataCollection;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,8 +24,8 @@ public class Authentication {
      * @param password login password
      * @return array of [username, email]
      */
-    public String[] login(String username, String password) {
-        String[] credentials = {null, null};
+    public PlayerDataCollection login(String username, String password) {
+        PlayerDataCollection playerData = new PlayerDataCollection();
         try {
             String query = "SELECT * FROM `players` WHERE `username` = \"" + username + "\" AND `password` = \"" + password + "\" LIMIT 1";
 
@@ -31,14 +33,16 @@ public class Authentication {
             ResultSet resultSet = statement.executeQuery(query);
 
             while (resultSet.next()) {
-                credentials[0] = resultSet.getString(2);
-                credentials[1] = resultSet.getString(3);
+                playerData.setId(resultSet.getInt(1));
+                playerData.setUsername(resultSet.getString(2));
+                playerData.setEmail(resultSet.getString(3));
+                playerData.setScore(resultSet.getString(5));
             }
 
         } catch (SQLException throwable) {
             throwable.printStackTrace();
         }
-        return credentials;
+        return playerData;
     }
 
     /**

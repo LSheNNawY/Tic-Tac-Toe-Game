@@ -1,7 +1,9 @@
 package client.controllers;
 
+import cutomCollections.PlayerDataCollection;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import models.Authentication;
-import models.DatabaseManager;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -30,11 +32,13 @@ public class LoginController {
     @FXML
     void loginFunction(ActionEvent event) throws IOException {
         Authentication authentication = new Authentication();
-        credentials = authentication.login(usernameField.getText(), passwordField.getText());
+        PlayerDataCollection player = new PlayerDataCollection();
+        player = authentication.login(usernameField.getText(), passwordField.getText());
 
-        if (credentials[0] == null)
+        if (player.getId() == 0)
             errorField.setText("Wrong credentials.");
         else {
+            Main.playerData = player;
             Main.setRoot("main");
             Main.setSceneSize(945, 565);
         }

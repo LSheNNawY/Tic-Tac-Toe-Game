@@ -21,7 +21,7 @@ public class WinnerController implements Initializable {
     @FXML
     private MediaView mediaView;
 
-    private final String path = new File("src/client.videos/winner.mp4").toURI().toString();
+    private final String path = new File("src/client/videos/winner.wav").toURI().toString();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

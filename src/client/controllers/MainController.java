@@ -3,10 +3,16 @@ package client.controllers;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import cutomCollections.PlayerDataCollection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
-public class MainController {
+public class MainController implements Initializable {
+    public static PlayerDataCollection playerData;
 
     @FXML
     private ResourceBundle resources;
@@ -20,8 +26,10 @@ public class MainController {
     }
 
     @FXML
-    void multiAction(ActionEvent event) {
-
+    void multiAction(ActionEvent event) throws IOException {
+        Main.setRoot("networkMultiPlayers");
+        Main.setSceneSize(1083, 778);
+        Main.stage.setResizable(false);
     }
 
     @FXML
@@ -36,8 +44,17 @@ public class MainController {
         Main.stage.setResizable(false);
     }
 
-    @FXML
-    void initialize() {
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+//        PlayerDataCollection player;
+//        player = Main.playerData;
+//        JSONParser parser = new JSONParser();
+//        JSONObject playerjson = new JSONObject();
+////        playerJson.put("name", player.getUsername());
+////        playerJson.put("id", player.getId());
+////        playerJson.put("score", player.getScore());
+//        playerjson = (JSONObject) parser.parse(String.valueOf(player));
+        System.out.println();
 
     }
 }

@@ -1,7 +1,6 @@
 package client.controllers;
 
 import models.Authentication;
-import models.DatabaseManager;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
