@@ -38,7 +38,11 @@ public class SinglePlayerController {
     void initialize() {
         assert singleRoot != null : "fx:id=\"singleRoot\" was not injected: check your FXML file 'singlePlayer.fxml'.";
         showPlayerName();
+        showPlayerScore();
         clearBoard();
+
+        String score = Main.playerData.getScore();
+        System.out.println(score);
     }
 
     public void backAction(ActionEvent event) throws IOException {
@@ -94,6 +98,11 @@ public class SinglePlayerController {
     public void showPlayerName(){
         String name = Main.playerData.getUsername();
         playerUsername.setText(name);
+    }
+
+    public void showPlayerScore(){
+        String score = Main.playerData.getScore();
+        playerOneScore.setText(score);
     }
 
     public  void drawSymbol(String positionID){
