@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import cutomCollections.PlayerDataCollection;
 
 public class SinglePlayerController {
 
@@ -68,6 +69,13 @@ public class SinglePlayerController {
 
         checkWinner();
 
+        /*
+        PlayerDataCollection player = new PlayerDataCollection();
+        String name = player.getUsername();
+        System.out.println(name);
+*/
+        //System.out.println(button);
+        button.setDisable(true);
     }
 
     public void clearBoard(){
