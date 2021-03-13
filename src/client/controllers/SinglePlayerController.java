@@ -16,6 +16,7 @@ public class SinglePlayerController {
 
     public Text playerOneScore;
     public Text playerTwoScore;
+    public Text playerUsername;
     public Button backBtn,  sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
     String symbol = "X";
     String player = "user";
@@ -36,6 +37,7 @@ public class SinglePlayerController {
     @FXML
     void initialize() {
         assert singleRoot != null : "fx:id=\"singleRoot\" was not injected: check your FXML file 'singlePlayer.fxml'.";
+        showPlayerName();
         clearBoard();
     }
 
@@ -69,11 +71,10 @@ public class SinglePlayerController {
 
         checkWinner();
 
-        /*
-        PlayerDataCollection player = new PlayerDataCollection();
-        String name = player.getUsername();
-        System.out.println(name);
-*/
+
+
+
+
         //System.out.println(button);
         button.setDisable(true);
     }
@@ -88,6 +89,11 @@ public class SinglePlayerController {
         sq7.setText("");
         sq8.setText("");
         sq9.setText("");
+    }
+
+    public void showPlayerName(){
+        String name = Main.playerData.getUsername();
+        playerUsername.setText(name);
     }
 
     public  void drawSymbol(String positionID){

@@ -21,7 +21,7 @@
             <Image url="@../images/avatar.png" />
          </image>
       </ImageView>
-      <Text layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
+      <Text fx:id="playerUsername" layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
       <Text layoutX="86.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="score" text="Score:" wrappingWidth="52.0" />
       <Text fx:id="playerOneScore" layoutX="150.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="score" text="1" wrappingWidth="44.54345703125" />
       <Text layoutX="904.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Computer" wrappingWidth="131.9830722808838" />
