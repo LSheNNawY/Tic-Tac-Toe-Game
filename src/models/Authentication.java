@@ -22,7 +22,7 @@ public class Authentication {
      * Login method
      * @param username login username
      * @param password login password
-     * @return array of [username, email]
+     * @return PlayerDataCollection playerData
      */
     public PlayerDataCollection login(String username, String password) {
         PlayerDataCollection playerData = new PlayerDataCollection();

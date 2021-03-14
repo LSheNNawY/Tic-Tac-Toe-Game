@@ -2,6 +2,7 @@ package client.controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 import cutomCollections.PlayerDataCollection;
@@ -10,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class MainController implements Initializable {
     public static PlayerDataCollection playerData;
@@ -46,15 +48,5 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        PlayerDataCollection player;
-//        player = Main.playerData;
-//        JSONParser parser = new JSONParser();
-//        JSONObject playerjson = new JSONObject();
-////        playerJson.put("name", player.getUsername());
-////        playerJson.put("id", player.getId());
-////        playerJson.put("score", player.getScore());
-//        playerjson = (JSONObject) parser.parse(String.valueOf(player));
-        System.out.println();
-
     }
 }

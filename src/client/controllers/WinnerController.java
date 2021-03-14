@@ -25,7 +25,8 @@ public class WinnerController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Media media = new Media(new File(path).toString());
+        System.out.println(path);
+        Media media = new Media(new File("src/client/videos/winner.wav").toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
         mediaPlayer.setAutoPlay(true);
