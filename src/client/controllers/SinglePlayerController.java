@@ -11,6 +11,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import cutomCollections.PlayerDataCollection;
+import models.SinglePlayerRecord;
 
 public class SinglePlayerController {
 
@@ -20,6 +21,9 @@ public class SinglePlayerController {
     public Button backBtn,  sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
     String symbol = "X";
     String player = "user";
+    int user_id = Main.playerData.getId();
+    int game_id = 0;
+    SinglePlayerRecord singlePlayerRecord = new SinglePlayerRecord();
 
     static ArrayList<String> playerPositions = new ArrayList<String>();
     static ArrayList<String> cpuPositions = new ArrayList<String>();
@@ -40,9 +44,12 @@ public class SinglePlayerController {
         showPlayerName();
         showPlayerScore();
         clearBoard();
-
+        game_id = singlePlayerRecord.createGame(user_id);
         String score = Main.playerData.getScore();
-        System.out.println(score);
+
+        // To Be Moved
+
+       // singlePlayerRecord.storeMove(game_id,user_id,1);
     }
 
     public void backAction(ActionEvent event) throws IOException {
