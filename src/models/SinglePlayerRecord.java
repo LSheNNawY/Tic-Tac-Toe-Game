@@ -51,7 +51,7 @@ public class SinglePlayerRecord {
         return result;
     }
 
-    public void setWinner( int winner_id , int game_id ){
+    public int setWinner( int winner_id , int game_id ){
         int result = 0;
         try {
             String query = "UPDATE `games` SET `winner` = "+ winner_id +" where id = " + game_id +" ";

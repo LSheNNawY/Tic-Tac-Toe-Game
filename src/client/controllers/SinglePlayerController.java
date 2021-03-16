@@ -22,7 +22,9 @@ public class SinglePlayerController {
     String symbol = "X";
     String player = "user";
     int user_id = Main.playerData.getId();
+    int cpu_id = 4;
     int game_id = 0;
+    int move_id = 1;
     SinglePlayerRecord singlePlayerRecord = new SinglePlayerRecord();
 
     static ArrayList<String> playerPositions = new ArrayList<String>();
@@ -45,11 +47,6 @@ public class SinglePlayerController {
         showPlayerScore();
         clearBoard();
         game_id = singlePlayerRecord.createGame(user_id);
-        String score = Main.playerData.getScore();
-
-        // To Be Moved
-
-       // singlePlayerRecord.storeMove(game_id,user_id,1);
     }
 
     public void backAction(ActionEvent event) throws IOException {
@@ -66,7 +63,9 @@ public class SinglePlayerController {
         player = "user";
         drawSymbol(playerPosition);
         playerPositions.add(playerPosition);
-        System.out.println(playerPosition);
+        move_id = Integer.parseInt(playerPosition.substring(playerPosition.length() - 1));
+        singlePlayerRecord.storeMove(game_id,user_id,move_id);
+
 
         Random rand = new Random();
         String cpuPosition = "sq" + String.valueOf(rand.nextInt(9) + 1);
@@ -75,18 +74,16 @@ public class SinglePlayerController {
             cpuPosition = "sq" + String.valueOf(rand.nextInt(9) + 1);
         }
 
-        System.out.println(cpuPosition);
+
         player = "cpu";
         drawSymbol(cpuPosition);
         cpuPositions.add(cpuPosition);
+        move_id = Integer.parseInt(cpuPosition.substring(cpuPosition.length() - 1));
+        singlePlayerRecord.storeMove(game_id,user_id,move_id);
 
         checkWinner();
 
 
-
-
-
-        //System.out.println(button);
         button.setDisable(true);
     }
 
