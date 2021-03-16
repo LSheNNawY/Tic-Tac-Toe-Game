@@ -79,7 +79,7 @@ public class SinglePlayerController {
         drawSymbol(cpuPosition);
         cpuPositions.add(cpuPosition);
         move_id = Integer.parseInt(cpuPosition.substring(cpuPosition.length() - 1));
-        singlePlayerRecord.storeMove(game_id,user_id,move_id);
+        singlePlayerRecord.storeMove(game_id,cpu_id,move_id);
 
         checkWinner();
 
@@ -180,9 +180,11 @@ public class SinglePlayerController {
         for ( List l : winningConditions ){
             if(playerPositions.containsAll(l)){
                 System.out.println("You Won");
+                singlePlayerRecord.setWinner(user_id,game_id);
             }
             else  if (playerPositions.containsAll(l)){
                 System.out.println("cpu Wins :( ");
+                singlePlayerRecord.setWinner(cpu_id,game_id);
             }
         }
         return "";
