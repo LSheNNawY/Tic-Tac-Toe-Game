@@ -21,11 +21,11 @@ public class Main extends Application {
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
-    static void setSceneSize(double width, double height) {
+    public static void setSceneSize(double width, double height) {
         stage.setHeight(height);
         stage.setWidth(width);
     }

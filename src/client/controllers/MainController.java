@@ -20,8 +20,10 @@ public class MainController {
     }
 
     @FXML
-    void multiAction(ActionEvent event) {
-
+    void multiAction(ActionEvent event) throws IOException {
+        Main.setRoot("multiPlayer");
+        Main.setSceneSize(1083, 778);
+        Main.stage.setResizable(false);
     }
 
     @FXML
