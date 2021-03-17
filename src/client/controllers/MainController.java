@@ -27,7 +27,8 @@ public class MainController implements Initializable {
 
     @FXML
     void multiAction(ActionEvent event) throws IOException {
-        Main.setRoot("networkMultiPlayers");
+        Main.setRoot("multiPlayer");
+
         Main.setSceneSize(1083, 778);
         Main.stage.setResizable(false);
     }
