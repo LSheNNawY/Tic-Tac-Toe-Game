@@ -21,7 +21,7 @@
             <Image url="@../images/avatar.png" />
          </image>
       </ImageView>
-      <Text layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
+      <Text fx:id="playerUsername" layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
       <Text layoutX="86.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="score" text="Score:" wrappingWidth="52.0" />
       <Text fx:id="playerOneScore" layoutX="150.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="score" text="1" wrappingWidth="44.54345703125" />
       <Text layoutX="904.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Computer" wrappingWidth="131.9830722808838" />
@@ -32,73 +32,73 @@
             <Image url="@../images/borad2.png" />
          </image>
       </ImageView>
-      <Button fx:id="sq6" layoutX="635.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq6" layoutX="635.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq5" layoutX="450.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq5" layoutX="450.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="O" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq4" layoutX="264.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq4" layoutX="264.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq3" layoutX="635.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq3" layoutX="635.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq2" layoutX="450.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq2" layoutX="450.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="O" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq9" layoutX="635.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq9" layoutX="635.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq8" layoutX="454.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq8" layoutX="454.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq7" layoutX="264.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq7" layoutX="264.0" layoutY="561.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="O" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq1" layoutX="264.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="104.0" prefWidth="122.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="sq1" layoutX="264.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="82.0" prefWidth="64.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
          <font>
-            <Font name="Gabriola" size="60.0" />
+            <Font name="Droid Sans Mono Dotted for Powerline" size="70.0" />
          </font>
          <opaqueInsets>
             <Insets />

@@ -1,8 +1,6 @@
 package client.controllers;
 
 import cutomCollections.PlayerDataCollection;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import models.Authentication;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
@@ -32,7 +30,7 @@ public class LoginController {
     @FXML
     void loginFunction(ActionEvent event) throws IOException {
         Authentication authentication = new Authentication();
-        PlayerDataCollection player = new PlayerDataCollection();
+        PlayerDataCollection player;
         player = authentication.login(usernameField.getText(), passwordField.getText());
 
         if (player.getId() == 0)
