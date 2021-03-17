@@ -6,7 +6,7 @@ public class DatabaseManager {
     private static DatabaseManager databaseManager = null;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/tic_tac_toe?serverTimezone=UTC";
     private static final String DB_USERNAME = "root";
-    private static final String DB_PASSWORD = "";
+    private static final String DB_PASSWORD = "1234";
     private static Connection connection = null;
     private static Statement statement = null;
 

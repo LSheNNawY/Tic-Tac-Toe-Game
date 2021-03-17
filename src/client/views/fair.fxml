@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.media.MediaView?>
 
-<AnchorPane fx:id="mediaViewContainer" prefHeight="593.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.WinnerController">
+<AnchorPane fx:id="mediaViewContainer" prefHeight="593.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.FairController">
    <children>
       <MediaView fx:id="mediaView" fitHeight="${mediaViewContainer.height}" fitWidth="${mediaViewContainer.width}" layoutX="38.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <Button fx:id="backBtn" graphicTextGap="0.0" layoutX="27.0" layoutY="451.0" mnemonicParsing="false" onAction="#backAction" prefHeight="84.0" prefWidth="111.0" style="-fx-background-color: transparent;" text="  ">
