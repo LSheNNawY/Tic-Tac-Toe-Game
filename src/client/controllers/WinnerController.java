@@ -1,9 +1,11 @@
 package client.controllers;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.media.Media;
@@ -21,15 +23,23 @@ public class WinnerController implements Initializable {
     @FXML
     private MediaView mediaView;
 
+    private MediaPlayer mediaPlayer;
+
     private final String path = new File("src/client/videos/winner.mp4").toURI().toString();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        System.out.println(path);
         Media media = new Media(path);
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer = new MediaPlayer(media);
         mediaView.setMediaPlayer(mediaPlayer);
         mediaPlayer.setAutoPlay(true);
+    }
+
+    public void backAction(ActionEvent actionEvent) throws IOException {
+        mediaPlayer.stop();
+        Main.setRoot("main");
+        Main.setSceneSize(945, 565);
+        Main.stage.setResizable(false);
     }
 }
 

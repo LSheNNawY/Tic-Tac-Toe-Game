@@ -187,12 +187,6 @@ public class MultiPlayerController extends Component {
             case "sq2":
                 sq2.setText(startGame);
                 sq2.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq2.setStyle("-fx-color: green;");
-//                } else {
-//                    sq2.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -201,12 +195,6 @@ public class MultiPlayerController extends Component {
             case "sq3":
                 sq3.setText(startGame);
                 sq3.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq3.setStyle("-fx-color: green;");
-//                } else {
-//                    sq3.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -215,12 +203,6 @@ public class MultiPlayerController extends Component {
             case "sq4":
                 sq4.setText(startGame);
                 sq4.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq4.setStyle("-fx-color: green;");
-//                } else {
-//                    sq4.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -229,12 +211,6 @@ public class MultiPlayerController extends Component {
             case "sq5":
                 sq5.setText(startGame);
                 sq5.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq5.setStyle("-fx-color: green;");
-//                } else {
-//                    sq5.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -243,12 +219,6 @@ public class MultiPlayerController extends Component {
             case "sq6":
                 sq6.setText(startGame);
                 sq6.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq6.setStyle("-fx-color: green;");
-//                } else {
-//                    sq6.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -257,12 +227,6 @@ public class MultiPlayerController extends Component {
             case "sq7":
                 sq7.setText(startGame);
                 sq7.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq7.setStyle("-fx-color: green;");
-//                } else {
-//                    sq7.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -271,12 +235,6 @@ public class MultiPlayerController extends Component {
             case "sq8":
                 sq8.setText(startGame);
                 sq8.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq8.setStyle("-fx-color: green;");
-//                } else {
-//                    sq8.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");
@@ -285,12 +243,6 @@ public class MultiPlayerController extends Component {
             case "sq9":
                 sq9.setText(startGame);
                 sq9.setStyle( "-fx-background-color: black;" );
-
-//                if (startGame.equalsIgnoreCase(game_play)) {
-//                    sq9.setStyle("-fx-color: green;");
-//                } else {
-//                    sq9.setStyle("-fx-color: blue;");
-//                }
                 choose_a_player();
                 winningGame("X", xCount, "pink");
                 winningGame("O", oCount, "cyan");

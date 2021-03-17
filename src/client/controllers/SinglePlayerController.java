@@ -26,7 +26,6 @@ public class SinglePlayerController implements Initializable {
     int cpu_id = 2;
     int game_id = 0;
     int move_id = 1;
-    static int counter = 1;
     SinglePlayerRecord singlePlayerRecord = new SinglePlayerRecord();
 
     static ArrayList<String> playerPositions = new ArrayList<String>();
@@ -46,34 +45,35 @@ public class SinglePlayerController implements Initializable {
     public void backAction(ActionEvent event) throws IOException {
         Main.setRoot("main");
         Main.setSceneSize(945, 565);
+        Main.stage.setResizable(false);
     }
 
     public void mouseClicked(MouseEvent mouseEvent) {
-            Object node = mouseEvent.getSource();
-            Button button = (Button) node;
-            String playerPosition = button.getId();
+        Object node = mouseEvent.getSource();
+        Button button = (Button) node;
+        String playerPosition = button.getId();
 
-            player = "user";
-            drawSymbol(playerPosition);
-            playerPositions.add(playerPosition);
-            move_id = Integer.parseInt(playerPosition.substring(playerPosition.length() - 1));
-            singlePlayerRecord.storeMove(game_id,user_id,move_id);
+        player = "user";
+        drawSymbol(playerPosition);
+        playerPositions.add(playerPosition);
+        move_id = Integer.parseInt(playerPosition.substring(playerPosition.length() - 1));
+        singlePlayerRecord.storeMove(game_id,user_id,move_id);
 
-            Random rand = new Random();
-            String cpuPosition = "sq" + String.valueOf(rand.nextInt(9) + 1);
+        Random rand = new Random();
+        String cpuPosition = "sq" + String.valueOf(rand.nextInt(9) + 1);
 
-            while (cpuPositions.contains(cpuPosition) || playerPositions.contains(cpuPosition) ){
-                cpuPosition = "sq" + String.valueOf(rand.nextInt(9) + 1);
-            }
-            player = "cpu";
-            drawSymbol(cpuPosition);
-            cpuPositions.add(cpuPosition);
-            move_id = Integer.parseInt(cpuPosition.substring(cpuPosition.length() - 1));
-            singlePlayerRecord.storeMove(game_id,cpu_id,move_id);
+        while (cpuPositions.contains(cpuPosition) || playerPositions.contains(cpuPosition) ){
+            cpuPosition = "sq" + String.valueOf(rand.nextInt(9) + 1);
+        }
+        player = "cpu";
+        drawSymbol(cpuPosition);
+        cpuPositions.add(cpuPosition);
+        move_id = Integer.parseInt(cpuPosition.substring(cpuPosition.length() - 1));
+        singlePlayerRecord.storeMove(game_id,cpu_id,move_id);
 
-            checkWinner();
+        checkWinner();
 
-            button.setDisable(true);
+        button.setDisable(true);
     }
 
     public void clearBoard(){
@@ -170,20 +170,10 @@ public class SinglePlayerController implements Initializable {
             if(playerPositions.containsAll(l)){
                 System.out.println("You Won");
                 singlePlayerRecord.setWinner(user_id,game_id);
-                try {
-                    Main.setRoot("winner");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
             else  if (playerPositions.containsAll(l)){
                 System.out.println("cpu Wins :( ");
                 singlePlayerRecord.setWinner(cpu_id,game_id);
-                try {
-                    Main.setRoot("winner");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
         return "";
