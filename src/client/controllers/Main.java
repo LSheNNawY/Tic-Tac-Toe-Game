@@ -1,5 +1,6 @@
 package client.controllers;
 
+import cutomCollections.PlayerDataCollection;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,7 +12,7 @@ import java.io.IOException;
 public class Main extends Application {
     static Scene scene;
     static Stage stage;
-
+    public static PlayerDataCollection playerData;
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
@@ -30,7 +31,7 @@ public class Main extends Application {
         stage.setWidth(width);
     }
 
-    private static Parent loadFXML(String fxml) throws IOException {
+    public static Parent loadFXML(String fxml) throws IOException {
         String separator = File.separator;
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(".." + separator + "views" + separator + fxml + ".fxml"));
         return fxmlLoader.load();
