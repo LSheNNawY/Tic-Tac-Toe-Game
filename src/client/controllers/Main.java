@@ -37,7 +37,7 @@ public class Main extends Application {
         scene.setRoot(loadFXML(fxml));
     }
 
-    static void setSceneSize(double width, double height) {
+    public static void setSceneSize(double width, double height) {
         stage.setHeight(height);
         stage.setWidth(width);
     }
