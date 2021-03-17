@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="800.0" styleClass="registerRoot" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.RegisterController">
+    <children>
+      <ImageView fitHeight="547.0" fitWidth="801.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loginback2.jpeg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="username" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="121.0" onAction="#registerAction" prefHeight="39.0" prefWidth="400.0" promptText="Username" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="213.0" onAction="#registerAction" prefHeight="39.0" prefWidth="400.0" promptText="Email" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="TOP_LEFT" focusColor="#812709" labelFloat="true" layoutX="201.0" layoutY="305.0" onAction="#registerAction" prefHeight="39.0" prefWidth="400.0" promptText="Password" style="-fx-text-inner-color: white; -fx-prompt-text-fill: gray;" unFocusColor="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </JFXPasswordField>
+        <JFXButton fx:id="registerBtn" buttonType="RAISED" layoutX="248.0" layoutY="397.0" onAction="#registerAction" prefHeight="47.0" prefWidth="137.0" style="-fx-background-color: #812709;" text="Register" textFill="WHITE">
+            <font>
+                <Font name="Monospaced Regular" size="16.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="415.0" layoutY="397.0" onAction="#loginAction" prefHeight="47.0" prefWidth="137.0" style="-fx-background-color: #812709;" text="Login" textFill="WHITE">
+            <font>
+                <Font name="Monospaced Regular" size="16.0" />
+            </font>
+        </JFXButton>
+      <Text fx:id="errorField" fill="RED" layoutX="201.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="180.7294921875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
