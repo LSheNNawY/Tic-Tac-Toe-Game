@@ -16,9 +16,6 @@ import java.util.EventObject;
 import java.util.ResourceBundle;
 
 public class MultiPlayerController extends Component {
-
-
-
       public Text playerOneScore;
       public Text playerTwoScore;
       public Button sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
@@ -155,7 +152,6 @@ public class MultiPlayerController extends Component {
 
     @FXML
     void initialize() {
-        assert singleRoot != null : "fx:id=\"singleRoot\" was not injected: check your FXML file 'multiPlayer.fxml'.";
 
     }
 
