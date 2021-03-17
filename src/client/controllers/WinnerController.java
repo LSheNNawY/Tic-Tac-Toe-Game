@@ -25,7 +25,7 @@ public class WinnerController implements Initializable {
 
     private MediaPlayer mediaPlayer;
 
-    private final String path = new File("src/client/videos/winner.mp4").toURI().toString();
+    private final String path = new File("src/client/videos/fair.mp4").toURI().toString();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

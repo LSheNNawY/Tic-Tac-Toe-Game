@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="mediaViewContainer" prefHeight="593.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LoserController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="${mediaViewContainer.height}" fitWidth="${mediaViewContainer.width}" layoutX="38.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="backBtn" graphicTextGap="0.0" layoutX="27.0" layoutY="451.0" mnemonicParsing="false" onAction="#backAction" prefHeight="84.0" prefWidth="111.0" style="-fx-background-color: transparent;" text="  ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="92.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/red-back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

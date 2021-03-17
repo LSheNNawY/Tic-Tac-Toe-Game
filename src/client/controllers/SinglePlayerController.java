@@ -170,10 +170,20 @@ public class SinglePlayerController implements Initializable {
             if(playerPositions.containsAll(l)){
                 System.out.println("You Won");
                 singlePlayerRecord.setWinner(user_id,game_id);
+                try {
+                    Main.setRoot("winner");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
             else  if (playerPositions.containsAll(l)){
                 System.out.println("cpu Wins :( ");
                 singlePlayerRecord.setWinner(cpu_id,game_id);
+                try {
+                    Main.setRoot("winner");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return "";

@@ -21,7 +21,7 @@
             <Image url="@../images/avatar.png" />
          </image>
       </ImageView>
-      <Text layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
+      <Text fx:id="playerOneName" layoutX="76.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 1" wrappingWidth="97.98307228088379" />
       <Text layoutX="76.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="score" text="Score:" wrappingWidth="52.0" />
       <Text fx:id="playerOneScore" layoutX="133.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="score" text="" wrappingWidth="44.54345703125" />
       <Text layoutX="904.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="playName" text="Player 2" wrappingWidth="131.9830722808838" />
@@ -96,7 +96,7 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="sq1" layoutX="272.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="106.0" prefWidth="111.0" style="-fx-background-color: transparent; -fx-background-image: D:\ITI-Study\JAVA\java-project\Tic-Tac-Toe-Game\src\client\images;" textFill="WHITE">
+      <Button fx:id="sq1" layoutX="272.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#mouseClicked" prefHeight="106.0" prefWidth="111.0" style="-fx-background-color: transparent;" textFill="WHITE">
          <font>
             <Font name="Comic Sans MS" size="50.0" />
          </font>
