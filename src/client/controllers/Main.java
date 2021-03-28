@@ -13,6 +13,7 @@ public class Main extends Application {
     static Scene scene;
     static Stage stage;
     public static PlayerDataCollection playerData;
+    public static int gameHistoryId;
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
