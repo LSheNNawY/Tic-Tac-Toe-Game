@@ -1,6 +1,7 @@
 package models;
 
-import cutomCollections.GameMovesDataCollection;
+
+//import cutomCollections.GameMovesDataCollection;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -52,7 +52,9 @@ public class HistoryController implements Initializable {
             int player_2 = game[2];
             Button btn = new Button();
             btn.setId(String.valueOf(id));
-            btn.setText("Show" + String.valueOf(id));
+          
+            btn.setText("Show");
+
             btn.getStyleClass().add("gameBtn");
 
             btn.setOnAction(new EventHandler() {

@@ -28,6 +28,7 @@ public class FairController implements Initializable {
     @FXML
     private MediaView mediaView;
     private final String separator = File.separator;
+
     private final String path = new File("src/client/videos/fair.mp4").toURI().toString();
     @Override
     public void initialize(URL location, ResourceBundle resources) {

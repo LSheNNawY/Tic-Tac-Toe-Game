@@ -4,16 +4,21 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.function.DoubleToIntFunction;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 
 public class WinnerController implements Initializable {
 
+    private MediaPlayer mediaPlayer;
+
+    public AnchorPane mediaViewContainer;
     @FXML
     private ResourceBundle resources;
 
@@ -23,9 +28,9 @@ public class WinnerController implements Initializable {
     @FXML
     private MediaView mediaView;
 
-    private MediaPlayer mediaPlayer;
+    private final String separator = File.separator;
+    private final String path = new File("src/client/videos/winner.mp4").toURI().toString();
 
-    private final String path = new File("src/client/videos/fair.mp4").toURI().toString();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -36,9 +41,11 @@ public class WinnerController implements Initializable {
     }
 
     public void backAction(ActionEvent actionEvent) throws IOException {
-        mediaPlayer.stop();
+
+        mediaPlayer.pause();
         Main.setRoot("main");
         Main.setSceneSize(945, 565);
+
         Main.stage.setResizable(false);
     }
 }

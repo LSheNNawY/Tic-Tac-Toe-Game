@@ -43,6 +43,9 @@ public class SinglePlayerController implements Initializable {
 
 
     public void backAction(ActionEvent event) throws IOException {
+        playerPositions.clear();
+        cpuPositions.clear();
+        clearBoard();
         Main.setRoot("main");
         Main.setSceneSize(945, 565);
         Main.stage.setResizable(false);
@@ -170,21 +173,36 @@ public class SinglePlayerController implements Initializable {
             if(playerPositions.containsAll(l)){
                 System.out.println("You Won");
                 singlePlayerRecord.setWinner(user_id,game_id);
+
+                playerPositions.clear();
+                cpuPositions.clear();
                 try {
                     Main.setRoot("winner");
+                    Main.setSceneSize(1083, 638);
+                    Main.stage.setResizable(false);
+                    clearBoard();
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            else  if (playerPositions.containsAll(l)){
+            else  if (cpuPositions.containsAll(l)){
                 System.out.println("cpu Wins :( ");
                 singlePlayerRecord.setWinner(cpu_id,game_id);
+
+                playerPositions.clear();
+                cpuPositions.clear();
+
                 try {
-                    Main.setRoot("winner");
+                    Main.setRoot("loser");
+                    Main.setSceneSize(815, 638);
+                    Main.stage.setResizable(false);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
+
         }
         return "";
     }
