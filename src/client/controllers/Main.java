@@ -2,10 +2,13 @@ package client.controllers;
 
 import cutomCollections.PlayerDataCollection;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -20,14 +23,21 @@ public class Main extends Application {
         scene = new Scene(loadFXML("login"), 800, 534);
         stage.setScene(scene);
         stage.setResizable(false);
+
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            public void handle(WindowEvent event) {
+                System.exit(0);
+            }
+        });
+
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 
-    static void setSceneSize(double width, double height) {
+    public static void setSceneSize(double width, double height) {
         stage.setHeight(height);
         stage.setWidth(width);
     }
@@ -41,4 +51,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }

@@ -6,20 +6,25 @@ import models.gameControll;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+
 import javafx.scene.Node;
+
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import models.DatabaseManager;
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+
 import java.util.*;
 
 
@@ -118,6 +123,7 @@ public class MultiPlayerController extends Component implements Initializable {
             setGameWinner(game_play);
             Main.setRoot(state);
             Main.setSceneSize(width, 638);
+
         }
 
         if (b4 == (game_play) && b5 == (game_play) && b6 == (game_play)) {
@@ -432,6 +438,7 @@ public class MultiPlayerController extends Component implements Initializable {
         playerOneScore.setText(Main.playerData.getScore());
 
         Date date=java.util.Calendar.getInstance().getTime();
+
         int user_id = Main.playerData.getId();
 
         gameControll game = new gameControll();

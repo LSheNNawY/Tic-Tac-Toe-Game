@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="778.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.controllers.ServerMainController">
+   <children>
+      <Text fill="WHITE" layoutX="184.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIC TAC TOE SERVER" textAlignment="CENTER" wrappingWidth="410.13671875">
+         <font>
+            <Font name="Cambria Math" size="40.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtServerStatus" fill="#00ff1e" layoutX="279.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server is Running" textAlignment="CENTER" wrappingWidth="220.13671875" AnchorPane.rightAnchor="278.86328125">
+         <font>
+            <Font name="Cambria Math" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

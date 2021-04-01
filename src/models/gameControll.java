@@ -152,8 +152,4 @@ public class gameControll {
         return res;
     }
 
-
-
-
-
 }

@@ -173,6 +173,7 @@ public class SinglePlayerController implements Initializable {
             if(playerPositions.containsAll(l)){
                 System.out.println("You Won");
                 singlePlayerRecord.setWinner(user_id,game_id);
+
                 playerPositions.clear();
                 cpuPositions.clear();
                 try {
@@ -188,6 +189,7 @@ public class SinglePlayerController implements Initializable {
             else  if (cpuPositions.containsAll(l)){
                 System.out.println("cpu Wins :( ");
                 singlePlayerRecord.setWinner(cpu_id,game_id);
+
                 playerPositions.clear();
                 cpuPositions.clear();
 
@@ -195,6 +197,7 @@ public class SinglePlayerController implements Initializable {
                     Main.setRoot("loser");
                     Main.setSceneSize(815, 638);
                     Main.stage.setResizable(false);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

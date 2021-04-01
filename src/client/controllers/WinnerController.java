@@ -27,8 +27,10 @@ public class WinnerController implements Initializable {
 
     @FXML
     private MediaView mediaView;
+
     private final String separator = File.separator;
     private final String path = new File("src/client/videos/winner.mp4").toURI().toString();
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -39,9 +41,12 @@ public class WinnerController implements Initializable {
     }
 
     public void backAction(ActionEvent actionEvent) throws IOException {
+
         mediaPlayer.pause();
         Main.setRoot("main");
         Main.setSceneSize(945, 565);
+
+        Main.stage.setResizable(false);
     }
 }
 

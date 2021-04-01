@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-//import client.network.PlayerConnectionHandler;
 import cutomCollections.PlayerDataCollection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

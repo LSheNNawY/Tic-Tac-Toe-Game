@@ -1,5 +1,6 @@
 package client.controllers;
 
+import client.controllers.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -27,8 +28,8 @@ public class FairController implements Initializable {
     @FXML
     private MediaView mediaView;
     private final String separator = File.separator;
-    private final String path = new File("D:/ITI-Study/JAVA/java-project/Tic-Tac-Toe-Game/src/client/videos/fair.mp4").toURI().toString();
 
+    private final String path = new File("src/client/videos/fair.mp4").toURI().toString();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Media media = new Media(path);
